@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    display:inline-block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 25%;
+    width: 100%;
+    background-color:rgb(68, 91, 91);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main{
+    background-color:rgb(122, 141, 159);
+    text-align: center;
+}
+
+.content h1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: outset;
+    border-radius: 5px;
+    border-color: rgb(49, 81, 81);
+    border-width: 10px;
+    
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+}
+
+nav[role="navigation"] ul{
+    background: black;
+    list-style: none;
+    margin:0;
+    padding-left: 0;
+    height: 50px;
+}
+nav[role="navigation"] li{
+    background: rgb(3, 132, 132);
+    display: inline;
+    position: relative;
+    padding-top: 27px;
+    padding-bottom: 6px;
+    margin-left: 20px;
+}
+nav[role="navigation"] li a{
+    color: rgb(204, 174, 232);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 50px;
+}
+/*This is for when you over over the button, does a slight change in color*/
+nav[role="navigation"] li:hover, nav[role="navigation"] li:focus-within{
+    background: rgb(245, 245, 220);
+    cursor: pointer;
+}
+nav[role="navigation"] li:focus-within a{
+    outline: none;
+}
+
+table
+{
+    border: 3px solid black;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,tr,td
+{
+border: 2px solid black;
+text-align: center;
+}
